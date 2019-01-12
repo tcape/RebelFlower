@@ -1,0 +1,18 @@
+﻿            var apiKey = System.Environment.GetEnvironmentVariable("SENDGRID_APIKEY");
+            var client = new SendGridClient(apiKey);
+
+            var message = new SendGridMessage();
+            message.SetFrom(new EmailAddress(newAppointmentRequest.ContactEmail));
+            message.AddTo(new EmailAddress("tcapehart@gmail.com"));
+            message.SetSubject("New Service Request");
+            message.AddContent(MimeType.Text, emailString.ToString());
+
+            try
+            {
+                await client.SendEmailAsync(message);
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }

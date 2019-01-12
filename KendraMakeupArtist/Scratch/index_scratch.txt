@@ -1,0 +1,19 @@
+<div class="my-container">
+        <a class="my-image-behind" href="/About" style="overflow:hidden"><img class="my-image" src="~/images/CoverCroped2.jpg" alt="Picture" /></a>
+    </div>
+
+
+
+<div class="index-item">
+        <a class="my-image-behind" href="/About" style="overflow:hidden">
+            <img class="my-image" src="~/images/CoverCroped1.jpg" alt="Picture" />
+        </a>
+
+    </div>
+
+
+<a class="btn btn-default" href="~/images/KendraLogo2.png">Error</a>
+
+<div class="hover_img">
+        <a href="/About">Show Image<span><img class="my-image" src="~/images/CoverCrop16_9.jpg" alt="photo" height="100" /></span></a>
+    </div>

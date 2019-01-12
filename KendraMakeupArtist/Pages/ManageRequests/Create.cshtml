@@ -1,0 +1,79 @@
+﻿@page
+@model KendraMakeupArtist.Pages.ManageRequests.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>AppointmentRequest</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="AppointmentRequest.RequestStatus" class="control-label"></label>
+                <select asp-for="AppointmentRequest.RequestStatus" class="form-control"></select>
+                <span asp-validation-for="AppointmentRequest.RequestStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppointmentRequest.FirstName" class="control-label"></label>
+                <input asp-for="AppointmentRequest.FirstName" class="form-control" />
+                <span asp-validation-for="AppointmentRequest.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppointmentRequest.LastName" class="control-label"></label>
+                <input asp-for="AppointmentRequest.LastName" class="form-control" />
+                <span asp-validation-for="AppointmentRequest.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppointmentRequest.AppointmentType" class="control-label"></label>
+                <select asp-for="AppointmentRequest.AppointmentType" class="form-control"></select>
+                <span asp-validation-for="AppointmentRequest.AppointmentType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppointmentRequest.RequestDateTime" class="control-label"></label>
+                <input asp-for="AppointmentRequest.RequestDateTime" class="form-control" />
+                <span asp-validation-for="AppointmentRequest.RequestDateTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppointmentRequest.AppointmentDate" class="control-label"></label>
+                <input asp-for="AppointmentRequest.AppointmentDate" class="form-control" />
+                <span asp-validation-for="AppointmentRequest.AppointmentDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppointmentRequest.Location" class="control-label"></label>
+                <input asp-for="AppointmentRequest.Location" class="form-control" />
+                <span asp-validation-for="AppointmentRequest.Location" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppointmentRequest.ContactEmail" class="control-label"></label>
+                <input asp-for="AppointmentRequest.ContactEmail" class="form-control" />
+                <span asp-validation-for="AppointmentRequest.ContactEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppointmentRequest.ContactPhone" class="control-label"></label>
+                <input asp-for="AppointmentRequest.ContactPhone" class="form-control" />
+                <span asp-validation-for="AppointmentRequest.ContactPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppointmentRequest.Message" class="control-label"></label>
+                <textarea asp-for="AppointmentRequest.Message" class="form-control"></textarea>
+                <span asp-validation-for="AppointmentRequest.Message" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

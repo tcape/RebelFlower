@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+5I9MgNG60eNokfyCJtrLgAAAAACAAAAAAAQZgAAAAEAACAAAADgejqOc9gpEt9rzMGKNLThwkWOfoauI46yrk8opQYEXQAAAAAOgAAAAAIAACAAAADCPHmzLALJFCJ+4ZwZ8pycadY2yAARjvHF2r9OvlABAIAAAABW8C+zXq+W0WTvYkXyCnf04L2x4+qV+J2avg9/rwjcD6zy+zEzerwpRRzDyNw4FiAe5YJb1fcAMy4p2T+/pKq7hUX8Tq076ZMXSUZfYqq+8oN41hf2VwIucsfBAv+jIwQhEmeC5MaykksFB1MZ220x33IHPqJGsezDEShp/VqHukAAAABcvaiNXuYl7U1xRfbJYfwPj9Px2wyoDSit74hUe2fbQRk6VCZdSMTtiwfBID0Us89SZY9tOv1gheydteOWFKZL</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:kendramakeupartistdbserver.database.windows.net,1433%3bInitial Catalog=KendraMakeupArtist_db%3bUser Id=TimCapehart%40kendramakeupartistdbserver%3bPassword=Xx081683!!</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="KendraMakeupArtist.Data.ApplicationDbContext">
+      <Value>Data Source=tcp:kendramakeupartistdbserver.database.windows.net,1433%3bInitial Catalog=KendraMakeupArtist_db%3bUser Id=TimCapehart%40kendramakeupartistdbserver%3bPassword=Xx081683!!</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

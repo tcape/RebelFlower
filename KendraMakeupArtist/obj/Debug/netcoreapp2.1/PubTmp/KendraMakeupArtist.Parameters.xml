@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="KendraMakeupArtist" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\tcape\\source\\repos\\KendraMakeupArtist\\KendraMakeupArtist\\obj\\Debug\\netcoreapp2\.1\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="KendraMakeupArtist.Data.ApplicationDbContext" description="" value="Data Source=tcp:kendramakeupartistdbserver.database.windows.net,1433;Initial Catalog=KendraMakeupArtist_db;User Id=TimCapehart@kendramakeupartistdbserver;Password=Xx081683!!" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\tcape\\source\\repos\\KendraMakeupArtist\\KendraMakeupArtist\\obj\\Debug\\netcoreapp2\.1\\PubTmp\\EFSQLScripts\\KendraMakeupArtist\.Data\.ApplicationDbContext\.sql$" />
+  </parameter>
+</parameters>

@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@*<hr />*@
+<br />
+<div class="my-grid-container">
+    <div class="grid-heading"><a class="my-image-behind" href="/About" style="overflow:hidden"><img class="my-image" src="~/images/cover_crop_thin_black_border.jpg" alt="Picture" /></a></div>  
+    @*<div class="bg_item"><img class="my-image" src="~/images/flower.png" /></div>*@
+    
+    <div class="item1"><a asp-page="/About"><img class="my-image" src="~/images/events_frame.jpg" alt="Picture" /></a></div>
+    <div class="item2"><a asp-page="/About"><img class="my-image" src="~/images/weddings_frame.jpg" alt="Picture" /></a></div>
+    <div class="item3"><a asp-page="/About"><img class="my-image" src="~/images/portraits_frame_flower4.jpg" alt="Picture" /></a> </div>
+    <div class="item4"><a asp-page="/About"><img class="my-image" src="~/images/editorial_frame.jpg" alt="Picture" /></a></div>
+
+    <div class="grid-footer"><a href="https://www.instagram.com/rebelflowerartistry/"><img class="image-centered social-bar" src="~/images/social_bar_fb_insta.jpg" /></a></div>
+</div>
+
+@*<div class="social-grid">
+        <div class="social-item1"><a><img class="my-image" src="~/images/facebook.jpg" /></a></div>
+        <div class="social-item2"><a><img class="my-image" src="~/images/insta.jpg" /></a></div>
+        <div class="social-item3"><a><img class="my-image" src="~/images//pintrest.jpg" /></a></div>
+        <div class="social-item4"><a><img class="my-image" src="~/images//twitter.jpg" /></a></div>
+
+    </div>*@

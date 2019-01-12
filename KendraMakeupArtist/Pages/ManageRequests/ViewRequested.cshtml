@@ -1,0 +1,149 @@
+﻿@page
+@model KendraMakeupArtist.Pages.ManageRequests.ViewRequestedModel
+
+@using Microsoft.AspNetCore.Identity
+
+
+@{
+    ViewData["Title"] = "ViewRequested";
+}
+
+@*<h2>ViewRequested</h2>*@
+
+<br />
+<br />
+
+
+<form method="post">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Last, First
+                </th>
+                <th>
+                    Appointment Type
+                </th>
+                <th>
+                    Appointment Date
+                </th>
+                <th>
+                    Date Submitted
+                </th>
+                <th>
+                    Status
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (var i = 0; i < Model.AppointmentRequests.Count; i++)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(m => m.AppointmentRequests[i].LastName),
+                        @Html.DisplayFor(m => m.AppointmentRequests[i].FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => m.AppointmentRequests[i].AppointmentType)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => m.AppointmentRequests[i].AppointmentDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => m.AppointmentRequests[i].RequestDateTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => m.AppointmentRequests[i].RequestStatus)
+                        
+                        
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+    <h4>
+        @Model.count
+    </h4>
+
+    <div class="form-group">
+        <input type="submit" value="Update" class="btn btn-default" />
+    </div>
+
+</form>
+@*@if (SignInManager.IsSignedIn(User))
+{
+    @if (Model.CurrentApplicationUser.UserType.Equals(1))
+    {
+        <form method="post">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Last, First
+                        </th>
+                        <th>
+                            Appointment Type
+                        </th>
+                        <th>
+                            Appointment Date
+                        </th>
+                        <th>
+                            Date Submitted
+                        </th>
+                        <th>
+                            Status
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (var i = 0; i < Model.AppointmentRequests.Count; i++)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(m => m.AppointmentRequests[i].LastName),
+                                @Html.DisplayFor(m => m.AppointmentRequests[i].FirstName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(m => m.AppointmentRequests[i].AppointmentType)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(m => m.AppointmentRequests[i].AppointmentDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(m => m.AppointmentRequests[i].RequestDateTime)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(m => m.AppointmentRequests[i].RequestStatus)
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+
+            </table>
+
+            <div class="form-group">
+                <input type="submit" value="Update" class="btn btn-default" />
+            </div>
+
+        </form>
+    }
+}
+
+@if (!User.Identity.IsAuthenticated)
+{
+    <div>
+        <br />
+        <h4>Restricted</h4>
+        <a asp-area="Identity" asp-page="/Index">Home</a><br />
+    </div>
+}
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}*@
+
+
+

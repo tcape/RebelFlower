@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-KendraMakeupArtist-1DD7520D-93E4-4900-8DEA-081556D2EB3F</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.6" PrivateAssets="All" />
+    <PackageReference Include="Sendgrid" Version="9.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Identity\Services\" />
+    <Folder Include="Pages\Portfolio\" />
+    <Folder Include="wwwroot\fonts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\_IMG_20171122_112306_594.jpg" />
+    <None Include="wwwroot\images\_IMG_20171122_112306_596.jpg" />
+    <None Include="wwwroot\images\_IMG_20171122_112410_359.jpg" />
+    <None Include="wwwroot\images\_IMG_20171124_001406_926.jpg" />
+    <None Include="wwwroot\images\_IMG_20171124_001930_586.jpg" />
+    <None Include="wwwroot\images\_IMG_20171124_001949_850.jpg" />
+  </ItemGroup>
+
+</Project>
