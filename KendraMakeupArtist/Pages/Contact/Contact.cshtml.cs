@@ -89,8 +89,8 @@ namespace KendraMakeupArtist.Pages.Contact
             {
                 var credential = new NetworkCredential
                 {
-			UserName = "rebelflowerartistry@gmail.com",
-                    	Password = "Pouting86"
+			UserName = "",
+                    	Password = ""
                 };
                 smtp.Credentials = credential;
                 smtp.Host = "smtp.gmail.com";
